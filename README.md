@@ -46,6 +46,6 @@ I'm sort of surprised by these results:
 - the unbatched vector code wins on x86 but the batched scalar code wins on x64
 - the x86 vectorized code beat the x64 vectorized code
 
-The fastest code is batched scalar code wins on x64.
+The fastest code is batched scalar code on x64.
 
 I hand wrote all the vector code so probably still have lots to learn. Very likely.
