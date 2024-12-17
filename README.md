@@ -42,6 +42,10 @@ benchmarking on architecture win-x64.
 best is 2
 ```
 
-I'm sort of surprised by these results: neither shows the vectorized
-evalutaors as better than the scalar ones. Perhaps this is because I hand-wrote
-the vector code and the compiler is simply better than me. Very likely.
+I'm sort of surprised by these results:
+- the unbatched vector code wins on x86 but the batched scalar code wins on x64
+- the x86 vectorized code beat the x64 vectorized code
+
+The fastest code is batched scalar code wins on x64.
+
+I hand wrote all the vector code so probably still have lots to learn. Very likely.
